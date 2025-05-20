@@ -12,4 +12,5 @@ class ClientOut(ClientBase):
     id: str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
+
