@@ -4,9 +4,6 @@ from app.routers import client, room, reservation, invoice, payment
 from app import models
 from app.database import engine
 
-# Crear todas las tablas en la BD
-models.Base.metadata.create_all(bind=engine)
-
 app = FastAPI(
     title="Hotel Booking API",
     version="1.0.0"
